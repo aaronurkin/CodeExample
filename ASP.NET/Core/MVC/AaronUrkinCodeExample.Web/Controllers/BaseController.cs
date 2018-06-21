@@ -1,12 +1,10 @@
-﻿using AaronUrkinCodeExample.BusinessLogicLayer.Middleware;
-using AutoMapper;
+﻿using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace AaronUrkinCodeExample.Web.Controllers
 {
-    //[MiddlewareFilter(typeof(LocalizationPipeline))]
     [Authorize]
     public abstract class BaseController : Controller
     {
