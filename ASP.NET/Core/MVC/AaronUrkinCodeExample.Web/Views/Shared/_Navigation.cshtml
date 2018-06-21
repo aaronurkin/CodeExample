@@ -1,0 +1,36 @@
+﻿@{ 
+    string action = ViewBag.Action;
+    string controller = ViewBag.Controller;
+    var langUrl = $"{this.Url.Action(action, controller, new { lang = CultureInfo.CurrentUICulture.TwoLetterISOLanguageName == "en" || CultureInfo.CurrentUICulture.Name == "en-US" ? "he-il" : "en-us" })}{ViewContext.HttpContext.Request.QueryString}";
+}
+<nav id="navigation" class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> @Translate["Menu"] <i class="fa fa-bars"></i>
+            </button>
+            <a asp-controller="Home" asp-action="Index" class="navbar-brand">@Translate["Code Example"]</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="@($"nav navbar-nav navbar-{(CultureInfo.CurrentUICulture.TextInfo.IsRightToLeft ? "right" : "left")}")">
+                <li @{if (ViewBag.Action == "Index" && ViewBag.Controller == "Home") { <text> class="active" </text>  } }><a asp-controller="Home" asp-action="Index">@Translate["Home"]</a></li>
+                <li @{if (ViewBag.Action == "Experience" && ViewBag.Controller == "Home") { <text> class="active" </text>  } }><a asp-controller="Home" asp-action="Experience">@Translate["Experience"]</a></li>
+                <li @{if (ViewBag.Action == "List" && ViewBag.Controller == "Log") { <text> class="active" </text>  } }><a asp-controller="Log" asp-action="List">@Translate["Log"]</a></li>
+                @*
+                    @if (this.User.Identity.IsAuthenticated)
+                    {
+                        <li @{if (ViewBag.Action == "List" && ViewBag.Controller == "Log") { <text> class="active" </text>  } }><a asp-controller="Log" asp-action="List">@Translate["Logs"]</a></li>
+                    }
+                *@
+            </ul>
+            <ul class="@($"nav navbar-nav navbar-{(CultureInfo.CurrentUICulture.TextInfo.IsRightToLeft ? "left" : "right")}")">
+                <li><a href="@langUrl">@(CultureInfo.CurrentUICulture.TwoLetterISOLanguageName == "en" || CultureInfo.CurrentUICulture.Name == "en-US" ? "עברית" : "English")</a></li>
+                <li>@await Html.PartialAsync("_LoginPartial")</li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>

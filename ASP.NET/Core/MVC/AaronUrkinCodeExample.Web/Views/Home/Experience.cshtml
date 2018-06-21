@@ -1,0 +1,87 @@
+﻿@{
+    ViewData["Title"] = Translate["Experience"];
+}
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">@ViewData["Title"]</h2>
+                <h3 class="section-subheading text-muted">@Translate["I'm working as ASP.NET web developer for 5 years"]</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="timeline">
+                    <li @{if (CultureInfo.CurrentUICulture.TextInfo.IsRightToLeft) { <text> class="timeline-inverted" </text>  } }>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="~/images/1.jpg" alt="Snapir Software">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>@Translate["2011-2012"]</h4>
+                                <h4 class="subheading">@Translate["Database Developer"]</h4>
+                                <h5 class="subheading">@Translate["at Snapir Software"]</h5>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">@Translate["I’ve developed and improved of stored procedures, functions, triggers etc. with SQL Server 2008"]</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li @{if (!CultureInfo.CurrentUICulture.TextInfo.IsRightToLeft) { <text> class="timeline-inverted" </text>  } }>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="~/images/2.jpg" alt="OLS-Komplekt">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>@Translate["2012-2013"]</h4>
+                                <h4 class="subheading">@Translate["Web Developer"]</h4>
+                                <h5 class="subheading">@Translate["at OLS-Komplekt"]</h5>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">@Translate["I've developed server side for OSH measurements web application with ASP.NET MVC 4 and SQL Server 2008"]</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li @{if (CultureInfo.CurrentUICulture.TextInfo.IsRightToLeft) { <text> class="timeline-inverted" </text>  } }>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="~/images/3.jpg" alt="Freelance">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>@Translate["2013-2017"]</h4>
+                                <h4 class="subheading">@Translate["Web Developer"]</h4>
+                                <h5 class="subheading">@Translate["as Freelancer"]</h5>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">@Translate["I've developed web applications and one-page websites for different purposes using ASP.NET MVC 4-5, SQL Server 2008-2012, jQuery, Bootstrap"]</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li @{if (!CultureInfo.CurrentUICulture.TextInfo.IsRightToLeft) { <text> class="timeline-inverted" </text>  } }>
+                        <div class="timeline-image gs">
+                            <img class="img-circle img-responsive" src="~/images/4.jpg" alt="Geidans Solutions">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>@Translate["2017-Present"]</h4>
+                                <h4 class="subheading">@Translate["Backend developer"]</h4>
+                                <h5 class="subheading">@Translate["at Geidans Solutions"]</h5>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">@Translate["I'm developing API on ASP.NET Core 2.0, EF Core (Code First), SQL Server 2014."]</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                @Translate["Be<br />My Next<br />Employer!"]
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

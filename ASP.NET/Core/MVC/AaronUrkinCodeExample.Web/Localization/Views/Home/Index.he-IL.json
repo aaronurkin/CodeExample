@@ -1,0 +1,14 @@
+﻿{
+  "Home Page": "דף הבית",
+  "Welcome To Home Page!": "ברוכים הבאים לדף הבית!",
+  "Aaron's Skills": "המיומנויות של אהרן",
+  "Skills": "מיומנויות",
+  "Show Me The Skills": "הראה לי את המיומנויות",
+  "I'm working as ASP.NET web developer for 5 years": "אני עובד כמפתח אינטרנט  ASP.NET במשך כבר 5 שנים.",
+  "SQL": "בסיסי נתונים",
+  "My greatest experience is in SQL. I have graduated from <a href=\"{0}\" target=\"blank\">Oracle course</a>.<br />Furthermore, now I'm learning MongoDB.": "הניסיון הגדול ביותר שלי הוא במאגרי נתונים יחסי. עבדתי מול SQL Server מהגרסת 2008 עד 2014. יש לי בוגר <a href=\"{0}\" target=\"blank\">קורס אורקל</a>.<br />יתר על כן עכשיו אני לומד MongoDB באופן עצמאי.",
+  "Backend": "צד שרת",
+  "Also I'm experienced in ASP.NET (C#). I developed numerous projects using ASP.NET MVC 4-5 and EF, and now I'm working using ASP.NET Core 2.0 (and experienced in 1.1) and EF Core (of course Code First). Also I'm learning nodeJS for pleasure.": "גם אני מנוסה ב-ASP.NET. פיתחתי פרויקטים רבים מול ASP.NET MVC 4-5 ו-EF, ועכשיו אני עובד מול ASP.NET Core 2.0 (גם יש לי נסיון בגרסה הראשונה) ו-EF Core (כמובן Code First). גם אני לומד nodeJS עבור הנאה.",
+  "Frontend": "צד קליינט",
+  "Although I prefer server-side, I do have experience in developing UI using HTML5, CSS, jQuery, jQueryUI and Bootstrap. Templating with Handlebars.": "למרות שאני מעדיף צד השרת, יש לי ניסיון בפיתוח צד קליינט מול CSS, HTML5, jQueryUI, jQuery ו-Bootstrap.<br /> תבניות עם Handlebars"
+}

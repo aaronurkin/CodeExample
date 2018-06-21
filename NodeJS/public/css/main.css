@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Quicksand Regular'), local('Quicksand-Regular'), url(https://fonts.gstatic.com/s/quicksand/v7/6xKtdSZaM9iE8KbpRA_hK1QL.woff) format('woff');
+}
+@font-face {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Quicksand Bold'), local('Quicksand-Bold'), url(https://fonts.gstatic.com/s/quicksand/v7/6xKodSZaM9iE8KbpRA_pkHEYT8L5.woff) format('woff');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    height: 100%;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    background: #c2e59c;
+    background: -webkit-gradient(linear, left top, right top, from(#64b3f4), to(#c2e59c));
+    background: linear-gradient(to right, #64b3f4, #c2e59c);
+}
+
+body * {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
+.add-button {
+    background-color: #4c9cd6;
+    border-radius:50%;
+    cursor: pointer;
+    height: 50px;
+    position: absolute; 
+    right: 30px; 
+    top: 30px;
+    -webkit-transition: 100ms background-color linear, 100ms -webkit-transform linear;
+    transition: 100ms background-color linear, 100ms -webkit-transform linear;
+    transition: 100ms background-color linear, 100ms transform linear;
+    transition: 100ms background-color linear, 100ms transform linear, 100ms -webkit-transform linear;
+    width: 50px;
+}
+
+.add-button:hover {
+    background-color: #58b9ff;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-box-shadow: 0 0 15px 4px #fff;
+            box-shadow: 0 0 15px 4px #fff;
+}
+
+.add-button > div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 40px;
+}
+
+.add-button > div .plus-icon {
+    width: 65%;
+    height: 6px;
+    background-color: #fff;
+}
+
+.add-button > div .plus-icon::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg)
+}
+
+button {
+    cursor: pointer;
+}
+
+iframe {
+    border: 0;
+    background-color: #eee;
+    border-radius: 5px;
+    margin: 10px;
+    overflow-x: hidden;
+    -webkit-box-shadow: 0 0 15px 4px #0000002b;
+            box-shadow: 0 0 15px 4px #0000002b;
+}

@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Quicksand Regular'), local('Quicksand-Regular'), url(https://fonts.gstatic.com/s/quicksand/v7/6xKtdSZaM9iE8KbpRA_hK1QL.woff) format('woff');
+}
+@font-face {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Quicksand Bold'), local('Quicksand-Bold'), url(https://fonts.gstatic.com/s/quicksand/v7/6xKodSZaM9iE8KbpRA_pkHEYT8L5.woff) format('woff');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    height: 100%;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body * {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
+ul.messages-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-bottom: 30px;
+    width: 265px;
+}
+
+ul.messages-list li {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+ul.messages-list li strong {
+    margin-right: 5px;
+    color: #eee;
+    background-color: #7d7d7d;
+    padding: 3px 9px;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+ul.messages-list li strong.me {
+    background-color: #529fcc;
+}
+
+ul.messages-list li strong.system {
+    background-color: #52cc72;
+}
+
+ul.messages-list li span {
+    font-size: 14px;
+}
+
+.message-wrapper {
+    width: 285px;
+    min-height: 362px;
+    background-color: #eee;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 10px;
+}
+
+.send-message {
+    width: 100%;
+    position: fixed;
+    bottom: 9px;
+    left: 0;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.send-message input[type='text'] {
+    height: 29px;
+    width: 205px;
+    font-size: 13px;
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-left: 15px;
+}
+
+.send-message button,
+.send-message input:focus {
+    outline: none;
+}
+
+.send-message button {
+    height: 29px;
+    width: 55px;
+    background-color: #8BC34A;
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+}
+
+ul.errors {
+    bottom: 45px;
+    color: #fff;
+    font-size: 12px;
+    list-style: none;
+    margin: auto;
+    position: absolute;
+    padding: 0;
+    width: 80%;
+}
+
+ul.errors > li {
+    background: tomato;
+    border-radius: 12px;
+    display: none;
+    margin: 5px 0;
+    padding: 3px 8px;
+    text-align: center;
+    transition: 100ms opacity linear;
+}
+
+.header {
+    height: 30px;
+    background: #babfc3;
+    text-align: center;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.footer {
+    height: 8px;
+    background: #babfc3;
+}

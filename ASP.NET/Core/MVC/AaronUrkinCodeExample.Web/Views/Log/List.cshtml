@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = Translate["Log"];
+}
+
+<section id="logs">
+    <div class="container">
+        <div id="list" class="row">
+            <div class="col-lg-12">
+                <div class="overlay"><img src="~/images/ajax-loader.gif" /></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+<script>
+        function refreshLogs(url) {
+            $.ajax({
+                url: url,
+                beforeSend: function () {
+                    $('#logs #list .overlay').removeClass('hidden');
+                },
+                complete: function (data) {
+                    if (data && data.responseText) {
+                        $('#list').replaceWith(data.responseText);
+                    }
+
+                    $('#logs #list .overlay').addClass('hidden');
+                }
+            });
+        };
+
+        $(document).ready(function () {
+            $('#logs').on('click', '#list .pager a', function (e) {
+                refreshLogs($(this).attr('href'));
+                e.preventDefault();
+            });
+
+            refreshLogs('@Url.Action("LogEntries")');
+        });
+</script>
+}

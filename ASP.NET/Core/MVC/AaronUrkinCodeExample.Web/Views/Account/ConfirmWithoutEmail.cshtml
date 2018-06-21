@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = Translate["Confirm email"];
+}
+
+<section id="confirm-email">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>@ViewData["Title"]</h1>
+                <h2>@Translate["To save your time, you can confirm the email address without receiving email"]</h2>
+                <a href="@ViewData["ConfirmationLink"]" class="btn btn-xl">@Translate["Confirm"]</a>
+            </div>
+        </div>
+    </div>
+</section>

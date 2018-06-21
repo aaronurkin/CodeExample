@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Messenger</title>
+    <link rel="stylesheet" href="/css/messenger.css">
+</head>
+<body>
+    <div class="header" id="header">message</div>
+    <div class="message-wrapper">
+        <ul class="messages-list" id="messages" ></ul>
+    </div>
+    <div class="send-message">
+        <input id="message-box" type="text" placeholder="type a message" />
+        <button id="send-message" type="button">Send</button>
+        <ul class="errors">
+            <li id="type-error" class="error">Please type a message</li>
+            <li id="send-error" class="error">Something went wrong! Please, call 911</li>
+        </ul>
+    </div>
+    <div class="footer"></div>
+    <script src="/js/messenger.js"></script>
+</body>
+</html>

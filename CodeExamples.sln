@@ -1,0 +1,93 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASP.NET", "ASP.NET", "{53B332A7-0C90-4780-9B5B-CA85422F7AEB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{7DE09C4B-7CD4-4C29-8958-41E40FBD6350}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MVC", "MVC", "{C9373A2D-98EF-4744-AC78-542D7EDB6FE8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AaronUrkinCodeExample.BusinessLogicLayer", "ASP.NET\Core\MVC\AaronUrkinCodeExample.BusinessLogicLayer\AaronUrkinCodeExample.BusinessLogicLayer.csproj", "{5A1605A5-62C8-4C0A-90F5-D0F2B0A6DA6E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AaronUrkinCodeExample.DataAccessLayer", "ASP.NET\Core\MVC\AaronUrkinCodeExample.DataAccessLayer\AaronUrkinCodeExample.DataAccessLayer.csproj", "{97552B32-E3D6-431B-BD8D-41CF8D1A838F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AaronUrkinCodeExample.Web", "ASP.NET\Core\MVC\AaronUrkinCodeExample.Web\AaronUrkinCodeExample.Web.csproj", "{B3699D14-51B5-44B2-8127-3104C0F9DE99}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NodeJS", "NodeJS", "{91F91B73-62D7-4E84-9A58-C040AB7C7C5E}"
+	ProjectSection(SolutionItems) = preProject
+		NodeJS\index.js = NodeJS\index.js
+		NodeJS\package.json = NodeJS\package.json
+		NodeJS\yarn.lock = NodeJS\yarn.lock
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{C0DC2C72-09DB-4E8B-9536-0875665A3880}"
+	ProjectSection(SolutionItems) = preProject
+		NodeJS\lib\api.js = NodeJS\lib\api.js
+		NodeJS\lib\logRepo.js = NodeJS\lib\logRepo.js
+		NodeJS\lib\weather.js = NodeJS\lib\weather.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "public", "public", "{65EA1BC0-7C87-4A7D-A0D7-A4E81536C8FE}"
+	ProjectSection(SolutionItems) = preProject
+		NodeJS\public\.DS_Store = NodeJS\public\.DS_Store
+		NodeJS\public\index.html = NodeJS\public\index.html
+		NodeJS\public\messenger.html = NodeJS\public\messenger.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{D3A5E177-A1E4-4C82-8E00-BE33286A98E8}"
+	ProjectSection(SolutionItems) = preProject
+		NodeJS\public\css\main.css = NodeJS\public\css\main.css
+		NodeJS\public\css\messenger.css = NodeJS\public\css\messenger.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{60BB999F-4509-4260-BE04-CF8D6D73E3FC}"
+	ProjectSection(SolutionItems) = preProject
+		NodeJS\public\images\loader.gif = NodeJS\public\images\loader.gif
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{67FA1F40-6620-4576-9827-88FE0A79AC74}"
+	ProjectSection(SolutionItems) = preProject
+		NodeJS\public\js\main.js = NodeJS\public\js\main.js
+		NodeJS\public\js\messenger.js = NodeJS\public\js\messenger.js
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A1605A5-62C8-4C0A-90F5-D0F2B0A6DA6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A1605A5-62C8-4C0A-90F5-D0F2B0A6DA6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A1605A5-62C8-4C0A-90F5-D0F2B0A6DA6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A1605A5-62C8-4C0A-90F5-D0F2B0A6DA6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97552B32-E3D6-431B-BD8D-41CF8D1A838F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97552B32-E3D6-431B-BD8D-41CF8D1A838F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97552B32-E3D6-431B-BD8D-41CF8D1A838F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97552B32-E3D6-431B-BD8D-41CF8D1A838F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3699D14-51B5-44B2-8127-3104C0F9DE99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3699D14-51B5-44B2-8127-3104C0F9DE99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3699D14-51B5-44B2-8127-3104C0F9DE99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3699D14-51B5-44B2-8127-3104C0F9DE99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7DE09C4B-7CD4-4C29-8958-41E40FBD6350} = {53B332A7-0C90-4780-9B5B-CA85422F7AEB}
+		{C9373A2D-98EF-4744-AC78-542D7EDB6FE8} = {7DE09C4B-7CD4-4C29-8958-41E40FBD6350}
+		{5A1605A5-62C8-4C0A-90F5-D0F2B0A6DA6E} = {C9373A2D-98EF-4744-AC78-542D7EDB6FE8}
+		{97552B32-E3D6-431B-BD8D-41CF8D1A838F} = {C9373A2D-98EF-4744-AC78-542D7EDB6FE8}
+		{B3699D14-51B5-44B2-8127-3104C0F9DE99} = {C9373A2D-98EF-4744-AC78-542D7EDB6FE8}
+		{C0DC2C72-09DB-4E8B-9536-0875665A3880} = {91F91B73-62D7-4E84-9A58-C040AB7C7C5E}
+		{65EA1BC0-7C87-4A7D-A0D7-A4E81536C8FE} = {91F91B73-62D7-4E84-9A58-C040AB7C7C5E}
+		{D3A5E177-A1E4-4C82-8E00-BE33286A98E8} = {65EA1BC0-7C87-4A7D-A0D7-A4E81536C8FE}
+		{60BB999F-4509-4260-BE04-CF8D6D73E3FC} = {65EA1BC0-7C87-4A7D-A0D7-A4E81536C8FE}
+		{67FA1F40-6620-4576-9827-88FE0A79AC74} = {65EA1BC0-7C87-4A7D-A0D7-A4E81536C8FE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {874D33B3-A71E-4132-83B1-A40AC666D79E}
+	EndGlobalSection
+EndGlobal

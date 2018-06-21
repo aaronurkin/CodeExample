@@ -1,0 +1,19 @@
+﻿<div id="logout-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <form asp-controller="Account" asp-action="Logout" asp-route-lang="@CultureInfo.CurrentUICulture.Name" method="post" id="logoutForm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">@Translate["Do you really want to logout?"]</h4>
+                </div>
+                <div class="modal-body">
+                    <p>@Translate["Please, don't do it."]</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">@Translate["Cancel"]</button>
+                    <button type="submit" class="btn btn-primary">@Translate["Yes, I'm sure!"]</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

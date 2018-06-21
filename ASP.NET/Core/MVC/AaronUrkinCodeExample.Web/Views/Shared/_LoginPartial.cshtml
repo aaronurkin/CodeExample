@@ -1,0 +1,20 @@
+@inject IApplicationUserService UserService
+
+@if (UserService.IsSignedIn(User))
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item">
+            <a asp-controller="Home" asp-action="Index" asp-route-lang="@CultureInfo.CurrentUICulture.Name">@Translate["Hello {0}!", UserService.GetUserFirstName(User)]</a>
+        </li>
+        <li class="nav-item">
+            <a href="#logout-modal" data-toggle="modal">@Translate["Log out"]</a>
+        </li>
+    </ul>
+}
+else
+{
+    <ul class="nav navbar-nav navbar-right">
+        <li @{if (ViewBag.Action == "Register" && ViewBag.Controller == "Account") { <text> class="active" </text>  } }><a asp-controller="Account" asp-action="Register" asp-route-lang="@CultureInfo.CurrentUICulture.Name">@Translate["Register"]</a></li>
+        <li @{if (ViewBag.Action == "Login" && ViewBag.Controller == "Account") { <text> class="active" </text>  } }><a asp-controller="Account" asp-action="Login" asp-route-lang="@CultureInfo.CurrentUICulture.Name">@Translate["Log in"]</a></li>
+    </ul>
+}

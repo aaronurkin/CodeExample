@@ -1,0 +1,18 @@
+﻿{
+  "First name": "שם פרטי",
+  "Last name": "שם משפחה",
+  "Email": "דוא\"ל",
+  "Phone": "טלפון",
+  "Country": "מדינה",
+  "Password": "סיסמה",
+  "Confirm password": "אשר סיסמה",
+  "Please, enter your first name": "אנא, הזן את שמך הפרטי",
+  "Please, enter your Email": "אנא, הזן את כתובת הדוא\"ל שלך",
+  "Please, enter correct Email": "אנא, הזן דוא\"ל נכון",
+  "Please, enter your phone number": "אנא הזן את מספר הנייד שלך",
+  "Please, enter correct phone number": "אנא, הזן מספר טלפון נכון",
+  "Please, enter country you live": "אנא, הזן את ארץ המגורים שלך",
+  "Please, enter password": "אנא, הזן סיסמה",
+  "The {0} must be at least {2} and at max {1} characters long.": "על {0} להיות לפחות {2} ובמקסימום {1} תווים.",
+  "The password and confirmation password do not match.": "הסיסמה וסיסמה האישור אינם תואמים."
+}
