@@ -13324,13 +13324,13 @@
     },
     "AaronUrkinCodeExample.BusinessLogicLayer/1.0.0": {
       "type": "project",
-      "path": "../AaronUrkinCodeExample.BusinessLogicLayer/AaronUrkinCodeExample.BusinessLogicLayer.csproj",
-      "msbuildProject": "../AaronUrkinCodeExample.BusinessLogicLayer/AaronUrkinCodeExample.BusinessLogicLayer.csproj"
+      "path": "../../AaronUrkinCodeExample.BusinessLogicLayer/AaronUrkinCodeExample.BusinessLogicLayer.csproj",
+      "msbuildProject": "../../AaronUrkinCodeExample.BusinessLogicLayer/AaronUrkinCodeExample.BusinessLogicLayer.csproj"
     },
     "AaronUrkinCodeExample.DataAccessLayer/1.0.0": {
       "type": "project",
-      "path": "../AaronUrkinCodeExample.DataAccessLayer/AaronUrkinCodeExample.DataAccessLayer.csproj",
-      "msbuildProject": "../AaronUrkinCodeExample.DataAccessLayer/AaronUrkinCodeExample.DataAccessLayer.csproj"
+      "path": "../../AaronUrkinCodeExample.DataAccessLayer/AaronUrkinCodeExample.DataAccessLayer.csproj",
+      "msbuildProject": "../../AaronUrkinCodeExample.DataAccessLayer/AaronUrkinCodeExample.DataAccessLayer.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -13375,8 +13375,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\Aaron\\source\\repos\\CodeExamples\\ASP.NET\\Core\\MVC\\AaronUrkinCodeExample.BusinessLogicLayer\\AaronUrkinCodeExample.BusinessLogicLayer.csproj": {
-              "projectPath": "D:\\Aaron\\source\\repos\\CodeExamples\\ASP.NET\\Core\\MVC\\AaronUrkinCodeExample.BusinessLogicLayer\\AaronUrkinCodeExample.BusinessLogicLayer.csproj"
+            "D:\\Aaron\\source\\repos\\CodeExamples\\ASP.NET\\Core\\AaronUrkinCodeExample.BusinessLogicLayer\\AaronUrkinCodeExample.BusinessLogicLayer.csproj": {
+              "projectPath": "D:\\Aaron\\source\\repos\\CodeExamples\\ASP.NET\\Core\\AaronUrkinCodeExample.BusinessLogicLayer\\AaronUrkinCodeExample.BusinessLogicLayer.csproj"
             }
           }
         }

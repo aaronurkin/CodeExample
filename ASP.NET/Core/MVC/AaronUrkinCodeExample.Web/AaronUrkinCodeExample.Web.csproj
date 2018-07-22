@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AaronUrkinCodeExample.BusinessLogicLayer\AaronUrkinCodeExample.BusinessLogicLayer.csproj" />
+    <ProjectReference Include="..\..\AaronUrkinCodeExample.BusinessLogicLayer\AaronUrkinCodeExample.BusinessLogicLayer.csproj" />
   </ItemGroup>
 
 </Project>
